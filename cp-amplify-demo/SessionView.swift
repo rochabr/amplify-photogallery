@@ -45,9 +45,9 @@ struct SessionView: View {
                     Amplify.DataStore.delete(entry){
                         switch $0 {
                         case .success:
-                            print("Post deleted!")
+                            print("Entry deleted!")
                         case .failure(let error):
-                            print("Error deleting post - \(error.localizedDescription)")
+                            print("Error deleting entry - \(error.localizedDescription)")
                         }
                     }
                 }

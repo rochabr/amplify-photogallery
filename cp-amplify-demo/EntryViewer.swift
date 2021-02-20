@@ -46,7 +46,7 @@ struct EntryViewer: View {
             observeEntries()
         }
     }
-    
+
     func getEntries() {
         Amplify.DataStore.query(Entry.self){
             result in

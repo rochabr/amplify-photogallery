@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ImagePicker: UIViewControllerRepresentable {
-    @Binding var image: UIImage?
+    //@Binding var image: UIImage?
+    @Binding var imageCache: [UIImage?]
     @Environment(\.presentationMode) var presentationMode
     
     typealias UIViewControllerType = UIImagePickerController
@@ -45,6 +46,7 @@ class ImagePickerCoordinator: NSObject, UINavigationControllerDelegate, UIImageP
         imagePicker.presentationMode.wrappedValue.dismiss()
         
         guard let image = info[.originalImage] as? UIImage else { return }
-        imagePicker.image = image
+        //imagePicker.image = image
+        imagePicker.imageCache.append(image)
     }
 }
