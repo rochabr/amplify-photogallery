@@ -90,6 +90,7 @@ fastlane/test_output
 iOSInjectionProject/
 
 #Amplify 
+amplify/
 amplify/\#current-cloud-backend
 amplify/.config/local-*
 amplify/backend/amplify-meta.json
@@ -99,3 +100,4 @@ dist/
 node_modules/
 aws-exports.js
 awsconfiguration.json
+amplifyconfiguration.json
