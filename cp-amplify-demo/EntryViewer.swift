@@ -11,17 +11,37 @@ import Combine
 
 struct EntryViewer: View {
     @State var imageCache = [String: UIImage?]()
+    @State var entries = [Entry]()
+    
+    // Create Date Formatter
+    var dateFormatter = DateFormatter()
     
     var body: some View {
-        List(imageCache.sorted(by: {$0.key > $1.key }), id: \.key) {key, image in
-            if let image = image {
-                Image(uiImage: image)
-                    .resizable()
-                    .scaledToFit()
+        List {
+            ForEach(self.entries, id: \.id) { entry in
+                HStack {
+                    if let image = imageCache[(entry.pictures?[0])!] {
+                        Image(uiImage: image!)
+                            .resizable()
+                            .frame(width: 128.0, height: 96.0)
+                    }
+                    Spacer()
+                    VStack (alignment: .trailing){
+                        //padding()
+                        Text(entry.locomotiveId).font(.headline)
+                        Text(entry.details).font(.subheadline)
+                        Spacer()
+                        let createdAt = entry.createdAt.foundationDate
+                        Text(dateFormatter.string(from: createdAt)).font(.footnote)
+                    }
+                }
             }
         }
         .onAppear(){
-            //deleteAll()
+            // Set Date Format
+            dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+            entries.removeAll()
+            
             getEntries()
             observeEntries()
         }
@@ -33,9 +53,7 @@ struct EntryViewer: View {
             
             switch result{
             case .success(let entries):
-                //print(entries)
-                
-                //download Images
+                self.entries.append(contentsOf: entries)
                 downloadImages(for: entries)
             
             case .failure(let error):
@@ -81,10 +99,10 @@ struct EntryViewer: View {
     }
 }
 
-struct EntryViewer_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        EntryViewer()
-    }
-}
-
+//struct EntryViewer_Previews: PreviewProvider {
+//
+//    static var previews: some View {
+//        EntryViewer()
+//    }
+//}
+//
