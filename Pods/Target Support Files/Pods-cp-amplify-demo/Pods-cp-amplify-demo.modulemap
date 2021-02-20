@@ -1,0 +1,6 @@
+framework module Pods_cp_amplify_demo {
+  umbrella header "Pods-cp-amplify-demo-umbrella.h"
+
+  export *
+  module * { export * }
+}

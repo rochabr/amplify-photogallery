@@ -1,0 +1,8 @@
+type Entry @model {
+  id: ID!
+  locomotiveId: String!
+  details: String!
+  pictures: [String]
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime
+}

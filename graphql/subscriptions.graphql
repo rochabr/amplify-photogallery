@@ -1,0 +1,40 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateEntry {
+  onCreateEntry {
+    id
+    locomotiveId
+    details
+    pictures
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateEntry {
+  onUpdateEntry {
+    id
+    locomotiveId
+    details
+    pictures
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteEntry {
+  onDeleteEntry {
+    id
+    locomotiveId
+    details
+    pictures
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}

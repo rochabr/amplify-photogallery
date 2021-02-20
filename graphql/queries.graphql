@@ -1,0 +1,62 @@
+# this is an auto generated file. This will be overwritten
+query SyncEntries(
+  $filter: ModelEntryFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncEntries(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      locomotiveId
+      details
+      pictures
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetEntry($id: ID!) {
+  getEntry(id: $id) {
+    id
+    locomotiveId
+    details
+    pictures
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListEntrys(
+  $filter: ModelEntryFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listEntrys(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      locomotiveId
+      details
+      pictures
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
