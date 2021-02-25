@@ -10,6 +10,11 @@
 		760ADCBF25E0C6DF00B2861D /* Entry+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ADCBC25E0C6DF00B2861D /* Entry+Schema.swift */; };
 		760ADCC025E0C6DF00B2861D /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ADCBD25E0C6DF00B2861D /* AmplifyModels.swift */; };
 		760ADCC125E0C6DF00B2861D /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ADCBE25E0C6DF00B2861D /* Entry.swift */; };
+		760AE8C725E76F0D0074D7FB /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760AE8C125E76F0D0074D7FB /* ColorPicker.swift */; };
+		760AE8C825E76F0D0074D7FB /* ColorsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760AE8C225E76F0D0074D7FB /* ColorsProvider.swift */; };
+		760AE8C925E76F0D0074D7FB /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760AE8C325E76F0D0074D7FB /* Drawing.swift */; };
+		760AE8CA25E76F0D0074D7FB /* DrawingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760AE8C425E76F0D0074D7FB /* DrawingPad.swift */; };
+		760AE8CB25E76F0D0074D7FB /* ColorEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760AE8C525E76F0D0074D7FB /* ColorEntry.swift */; };
 		761BB88025E0CF1F00926877 /* EntryRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761BB87F25E0CF1F00926877 /* EntryRegistration.swift */; };
 		761BB88325E0CF2F00926877 /* EntryViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761BB88225E0CF2F00926877 /* EntryViewer.swift */; };
 		761BB88625E0D37600926877 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761BB88525E0D37600926877 /* ImagePicker.swift */; };
@@ -35,6 +40,11 @@
 		760ADCBC25E0C6DF00B2861D /* Entry+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entry+Schema.swift"; sourceTree = "<group>"; };
 		760ADCBD25E0C6DF00B2861D /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
 		760ADCBE25E0C6DF00B2861D /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		760AE8C125E76F0D0074D7FB /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		760AE8C225E76F0D0074D7FB /* ColorsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsProvider.swift; sourceTree = "<group>"; };
+		760AE8C325E76F0D0074D7FB /* Drawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		760AE8C425E76F0D0074D7FB /* DrawingPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingPad.swift; sourceTree = "<group>"; };
+		760AE8C525E76F0D0074D7FB /* ColorEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorEntry.swift; sourceTree = "<group>"; };
 		761BB87F25E0CF1F00926877 /* EntryRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRegistration.swift; sourceTree = "<group>"; };
 		761BB88225E0CF2F00926877 /* EntryViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewer.swift; sourceTree = "<group>"; };
 		761BB88525E0D37600926877 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -106,6 +116,11 @@
 		768188C625E09331008DA72D /* cp-amplify-demo */ = {
 			isa = PBXGroup;
 			children = (
+				760AE8C525E76F0D0074D7FB /* ColorEntry.swift */,
+				760AE8C125E76F0D0074D7FB /* ColorPicker.swift */,
+				760AE8C225E76F0D0074D7FB /* ColorsProvider.swift */,
+				760AE8C325E76F0D0074D7FB /* Drawing.swift */,
+				760AE8C425E76F0D0074D7FB /* DrawingPad.swift */,
 				760ADCBB25E0C6DF00B2861D /* models */,
 				765CB0B325E0986D00E78674 /* amplifyconfiguration.json */,
 				765CB0B225E0986D00E78674 /* awsconfiguration.json */,
@@ -266,13 +281,18 @@
 				768188CA25E09331008DA72D /* ContentView.swift in Sources */,
 				761BB88325E0CF2F00926877 /* EntryViewer.swift in Sources */,
 				765CB0D525E09D8E00E78674 /* PrettyModifierExtensions.swift in Sources */,
+				760AE8CB25E76F0D0074D7FB /* ColorEntry.swift in Sources */,
 				765CB0DB25E09DA800E78674 /* SignUpView.swift in Sources */,
+				760AE8C725E76F0D0074D7FB /* ColorPicker.swift in Sources */,
 				760ADCC125E0C6DF00B2861D /* Entry.swift in Sources */,
 				760ADCBF25E0C6DF00B2861D /* Entry+Schema.swift in Sources */,
 				768188C825E09331008DA72D /* cp_amplify_demoApp.swift in Sources */,
 				765CB0CF25E09D3900E78674 /* LoginView.swift in Sources */,
+				760AE8C925E76F0D0074D7FB /* Drawing.swift in Sources */,
+				760AE8CA25E76F0D0074D7FB /* DrawingPad.swift in Sources */,
 				765CB0CC25E0998C00E78674 /* SessionManager.swift in Sources */,
 				761BB88025E0CF1F00926877 /* EntryRegistration.swift in Sources */,
+				760AE8C825E76F0D0074D7FB /* ColorsProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
